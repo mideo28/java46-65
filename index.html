@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JavaScript Practice</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 20px auto; padding: 0 16px; }
+  section { border: 1px solid #ccc; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  button { padding: 6px 14px; margin: 3px; cursor: pointer; }
+  input[type=number], input[type=text] { padding: 6px; margin: 3px; }
+  .done { text-decoration: line-through; color: #888; }
+  #counterValue { font-size: 32px; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Практические задания</h1>
+<p>Задания 46–60: откройте Console (F12). Задания 61–65 работают прямо на этой странице.</p>
+
+<section>
+  <h2>Задание 61. Интерактивный счётчик</h2>
+  <div id="counterValue">0</div>
+  <button id="plusBtn">+</button>
+  <button id="minusBtn">−</button>
+  <button id="resetBtn">Сброс</button>
+</section>
+
+<section>
+  <h2>Задание 62. Калькулятор индекса успеваемости</h2>
+  <input type="number" id="grade1" placeholder="Предмет 1 (0–100)">
+  <input type="number" id="grade2" placeholder="Предмет 2 (0–100)">
+  <input type="number" id="grade3" placeholder="Предмет 3 (0–100)">
+  <button id="calcBtn">Рассчитать</button>
+  <p id="gradeResult"></p>
+</section>
+
+<section>
+  <h2>Задание 63. Список задач (To-Do List)</h2>
+  <input type="text" id="taskInput" placeholder="Новая задача">
+  <button id="addTaskBtn">Добавить</button>
+  <ul id="taskList"></ul>
+  <p>Нажмите на текст задачи, чтобы отметить её выполненной.</p>
+</section>
+
+<section>
+  <h2>Задание 64. Тестирование студентов</h2>
+  <div id="quiz"></div>
+</section>
+
+<section>
+  <h2>Задание 65. Электронная система посещаемости</h2>
+  <label>Дата занятия: <input type="date" id="lessonDate"></label>
+  <div id="attendanceList"></div>
+  <button id="summaryBtn">Подвести итог</button>
+  <p id="attendanceResult"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
